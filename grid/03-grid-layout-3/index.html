@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holy Grail Mockup</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Holy Grail Mockup</title>
+		<script src="https://cdn.tailwindcss.com"></script>
 
-      <div class="header">
-        <div class="logo">Header Logo</div>
-        <div class="menu">
-          <ul>
-            <li>header link one</li>
-            <li>header link two</li>
-            <li>header link three</li>
-            <li>header link four</li>
-          </ul>
-        </div>
-      </div>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+	<body>
+		<div class="wrapper min-h-screen grid grid-cols-[1fr_4fr] grid-rows-[auto_auto_1fr_auto] gap-2">
+			<div class="header flex items-center justify-between col-start-1 col-end-[-1]">
+				<div class="logo">Header Logo</div>
+				<div class="menu">
+					<ul class="flex gap-20">
+						<li>header link one</li>
+						<li>header link two</li>
+						<li>header link three</li>
+						<li>header link four</li>
+					</ul>
+				</div>
+			</div>
 
-      <div class="sidebar">
-        <div class="photo">
-          <p>placeholder for image</p>    
-        </div>
-        <div class="side-content">Box 1
-        </div>
-        <div class="side-content">Box 2
-        </div>
-        <div class="side-content">Box 3
-        </div>
-      </div>
+			<div class="sidebar row-start-2 row-end-4 flex flex-col gap-14 [&>*]:flex-1">
+				<div class="photo grid place-content-center min-w-[250px]">
+					<p>placeholder for image</p>
+				</div>
+				<div class="side-content grid place-content-center min-w-[250px]">Box 1</div>
+				<div class="side-content grid place-content-center min-w-[250px]">Box 2</div>
+				<div class="side-content grid place-content-center min-w-[250px]">Box 3</div>
+			</div>
 
-      <div class="nav">
-        <ul>
-          <li>Latest Articles</li>
-          <li>Most Views</li>
-          <li>Featured</li>
-        </ul>
-      </div>
+			<div class="nav">
+				<ul class="flex justify-around">
+					<li>Latest Articles</li>
+					<li>Most Views</li>
+					<li>Featured</li>
+				</ul>
+			</div>
 
-      <div class="article">
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-      </div>
+			<div class="article grid grid-cols-[repeat(auto-fit,minmax(min(250px,100%),1fr))] gap-4">
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+				<div class="card">
+					<p class="title">Article Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+				</div>
+			</div>
 
-      <div class="footer">
-        <p>Copyright © The Odin Project 2021</p>
-      </div>
-      
-    </div>
-  </body>
+			<div class="footer col-start-1 col-end-[-1]">
+				<p>Copyright © The Odin Project 2021</p>
+			</div>
+		</div>
+	</body>
 </html>
